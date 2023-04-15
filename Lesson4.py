@@ -8,7 +8,7 @@ def test_greeting():
     """
     name = "Анна"
     age = 25
-    # TODO Сформируйте нужную строку
+
     output = f"Привет, {name}! Тебе {age} лет."
     print (output)
     # Проверяем результат
@@ -23,12 +23,12 @@ def test_rectangle():
     a = 10
     b = 20
 
-    # TODO сосчитайте периметр
+
     perimeter = (a+b)*2
     print (perimeter)
     assert perimeter == 60
 
-    # TODO сосчитайте площадь
+
     area = a*b
     print(area)
     assert area == 200
@@ -40,12 +40,12 @@ def test_circle():
     Используйте константу PI
     """
     r = 23
-    # TODO сосчитайте площадь
+
     area = math.pi*math.pow(r, 2)
     print(area)
     assert area == 1661.9025137490005
 
-    # TODO сосчитайте длину окружности
+
     length = 2 * math.pi * r
     print(length)
     assert length == 144.51326206513048
@@ -56,7 +56,7 @@ def test_random_list():
     Создайте список из 10 случайных чисел от 1 до 100 и отсортируйте его по возрастанию.
     """
 
-    # TODO создайте список
+
     l = [random.randint(1,100) for _ in range(10)]
     l.sort()
     print(l)
@@ -69,7 +69,7 @@ def test_unique_elements():
     Удалите из списка все повторяющиеся элементы
     """
     l = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]
-    # TODO удалите повторяющиеся элементы
+
     l = (list(set(l)))
     print(l)
     assert isinstance(l, list)
@@ -86,7 +86,7 @@ def test_dicts():
     """
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
-    # TODO создайте словарь
+
     d = dict(zip(first,second))
     print(list(d.values()))
 
